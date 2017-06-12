@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="root"></div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/components/header.js"></script>
+  <script src="js/components/login.js"></script>
+  <script src="js/components/dashboard.js"></script>
+  <script src="js/utils/facebook.js"></script>
+  <script src="js/index.js"></script>
+  <script>
+   (function(thisdocument, scriptelement, id) {
+     var js, fjs = thisdocument.getElementsByTagName(scriptelement)[0];
+     if (thisdocument.getElementById(id)) return;
+
+     js = thisdocument.createElement(scriptelement); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+  </script>
+</body>
+</html>
